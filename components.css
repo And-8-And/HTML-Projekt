@@ -1,0 +1,28 @@
+.card {
+  background: #fff;
+  border: 1px solid #e2e6ee;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+button {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+  background-color: darkorange;
+  transform: translateY(-1px);
+}
+
+button:focus {
+  outline: 3px solid cornflowerblue;
+  outline-offset: 2px;
+}

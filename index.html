@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólió – Főoldal</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .kiemeles {
+      background-color: #fff3cd;
+      border-left: 4px solid orange;
+      padding: 12px;
+      margin: 16px 0;
+    }
+
+    aside h2 {
+      text-decoration: underline;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Zsigmond András-Andor – Portfólió</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html#fooldal">Főoldal</a></li>
+        <li><a href="rolam.html">Rólam</a></li>
+        <li><a href="index.html#kepessegek">Képességek</a></li>
+        <li><a href="projektek.html">Projektek</a></li>
+        <li><a href="index.html#galeria">Galéria</a></li>
+        <li><a href="kapcsolat.html">Kapcsolat</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="layout">
+    <main>
+      <section id="fooldal">
+        <h1>Üdvözöllek a portfóliómban!</h1>
+        <p>
+          Ez a weboldal a <span style="color: crimson; font-weight: bold;">HTML</span>,
+          <span style="color: seagreen; font-weight: bold;">CSS</span> és JavaScript
+          gyakorlataim eredménye: bemutatom rajta magamat, a képességeimet,
+          a projektjeimet és az elérhetőségeimet.
+        </p>
+        <div class="kiemeles">
+          Ez a doboz a fejlécben lévő belső &lt;style&gt; blokk
+          <code>.kiemeles</code> osztályával néz ki így.
+        </div>
+        <p>
+          Nézd meg a <a href="rolam.html">Rólam</a> oldalt, ha többet szeretnél
+          megtudni rólam, vagy ugorj egyenesen a
+          <a href="projektek.html">Projektek</a> oldalra a munkáim megtekintéséhez.
+        </p>
+      </section>
+
+      <section id="kepessegek">
+        <h2>Képességek</h2>
+        <ul class="kepessegek">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Reszponzív webdesign</li>
+        </ul>
+      </section>
+
+      <section id="galeria">
+        <h2>Galéria</h2>
+        <div class="grid">
+          <figure>
+            <img src="https://picsum.photos/400/250?random=1" alt="Screenshot az első projektről">
+            <figcaption>Portfólió weboldal – kezdőlap terve</figcaption>
+          </figure>
+          <figure>
+            <img src="https://picsum.photos/400/250?random=2" alt="Screenshot a második projektről">
+            <figcaption>Bevásárlólista alkalmazás felülete</figcaption>
+          </figure>
+          <figure>
+            <img src="https://picsum.photos/400/250?random=3" alt="Screenshot a harmadik projektről">
+            <figcaption>Időjárás-lekérdező kis app</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="video">
+        <h2>Bemutató videó</h2>
+        <p>Rövid videó az egyik projektemről:</p>
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="Projekt bemutató videó"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+
+    </main>
+
+    <aside>
+      <h2>Gyors linkek</h2>
+      <ul>
+        <li><a href="projektek.html#projekt-1">Projekt 1 – Portfólió oldal</a></li>
+        <li><a href="projektek.html#projekt-2">Projekt 2 – Bevásárlólista app</a></li>
+        <li><a href="projektek.html#projekt-3">Projekt 3 – Időjárás app</a></li>
+        <li><a href="rolam.html">Bővebben rólam</a></li>
+        <li><a href="kapcsolat.html">Kapcsolatfelvétel</a></li>
+      </ul>
+    </aside>
+  </div>
+
+  <footer>
+    <p>Zsigmond András-Andor; zsigmondandrasandor@gmail.com &middot; +40757561635</p>
+    <p>&copy; 2026 Zsigmond András-Andor. Minden jog fenntartva.</p>
+  </footer>
+
+  <script>
+    function isEven(num) {
+      return num % 2 === 0;
+    }
+    console.log(isEven(4));
+    console.log(isEven(5));
+  </script>
+
+</body>
+</html>
